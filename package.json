@@ -1,0 +1,20 @@
+{
+  "name": "@f/reduce",
+  "description": "Reduce over the elements of a container",
+  "repository": "git://github.com/micro-js/reduce.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/is-array": "^1.1.1",
+    "@f/is-object": "^1.1.1",
+    "@f/reduce-array": "^0.2.1",
+    "@f/reduce-obj": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}

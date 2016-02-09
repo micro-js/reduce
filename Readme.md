@@ -16,16 +16,28 @@ Reduce over the elements of a container
 
 ```js
 var reduce = require('@f/reduce')
+var fruits = {apples: 2, oranges: 3}
+var numFruits = reduce(sum, 0, fruits)
 
+function sum (a, b) {
+  return a + b
+}
 ```
 
 ## API
 
-### reduce(arg)
+### reduce(cb, initialValue, collection)
 
-- `arg` -
+- `cb` - Callback called for each `collection` item with a accumlator value and the current item.
 
-**Returns:**
+```js
+function cb (accumulator, currentItem, key, colllection) {}
+```
+
+- `initialValue` - First value for the accumulator
+- `arr` Collection to be reduced
+
+**Returns:** The accumulated value
 
 ## License
 
